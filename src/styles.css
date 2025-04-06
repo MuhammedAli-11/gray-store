@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+#logo-container {
+    flex-shrink: 0; /* Логотип не должен сжиматься */
+}
+
+#logo {
+    height: 50px; /* Размер логотипа */
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Центрируем меню по горизонтали */
+    flex-grow: 1; /* Чтобы меню занимало оставшееся место */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center; /* Выравниваем иконки и текст по вертикали */
+}
+
+nav ul li {
+    display: flex;
+    align-items: center; /* Центрируем иконку и текст по вертикали */
+}
+
+nav ul li .icon {
+    width: 20px; /* Уменьшаем размер иконок */
+    height: 20px;
+    margin-right: 8px; /* Отступ между иконкой и текстом */
+    object-fit: contain;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Для уменьшения отступов от краев */
+body {
+    margin: 0;
+    padding: 0;
+}
